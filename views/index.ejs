@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="/public/javascripts/player.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <div id="video_cont">
+      <video>
+        <source src="http://nettuts.s3.amazonaws.com/763_sammyJSIntro/trailer_test.mp4" type="video/mp4">
+        <source src="http://nettuts.s3.amazonaws.com/763_sammyJSIntro/trailer_test.ogg" type="video/ogg">
+      </video>
+    </div>
+    <div id="video_controls">
+      <button id="play_pause" title="Play"> &#x25BA; </button>
+      <div id="progress">
+        <div id="progress_box">
+          <span id="video_progress"></span>
+        </div>
+      </div>
+      <div id="time">
+        <span id="c_time">00:00</span>
+        <span id="sep_time">/</span>
+        <span id="f_time">00:00</span>
+      </div>
+      <div id="volume">
+        <div id="volume_box">
+          <div id="volume_bar_box">
+            <div id="volume_bar"></div>
+          </div>
+        </div>
+      </div>
+      <button id="video_fulls" title="Fullscreen"> &#8660; </button>
+    </div>
+  </body>
+</html>
